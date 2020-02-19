@@ -104,7 +104,7 @@ If you're ready to test the weighted routing, you can modify the `weight` values
 
 > ℹ️ The values you enter should equal 100.
 
-```hcl
+```diff
 resource "aws_route53_record" "app1" {
   zone_id = "${data.aws_route53_zone.primary.zone_id}"
   name    = "${local.user}"
